@@ -1,15 +1,66 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+:root {
+  --fuenteOrquestarte:'Montserrat', sans-serif;
+  --fuenteCitas: 'Amatic SC', cursive;
+  --naranja: #F7882F;
+  --gris: #6b7a8f;
+  --amarillo: #f7c331;
+  --cafe: #dcc7aa;
+  --blanco:#ffffff;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--fuenteOrquestarte);
+}
+
+img {
+  max-width: 100%;
+}
+
+.main-background {
+  background-color: var(--naranja);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home-container {
+  max-width: 90%;
+  margin: 0 auto;
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.button {
+  display: inline-block;
+  background-color: var(--gris);
+  color: white;
+  height: 40px;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background-color 0.5s;
+}
+
+.button:hover {
+  background-color: var(--amarillo);
+}
+
+.home-container-buttons {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+}
